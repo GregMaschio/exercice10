@@ -1,6 +1,6 @@
 window.addEventListener("load",function(){
     let collectionBtnNouvelle = document.querySelectorAll(".BtnLireSuite");
-    let collectionNouvelle = document.querySelectorAll(".texte-nouvelle2 p");
+    let collectionNouvelle = document.querySelectorAll(".division-vide");
     console.log(collectionBtnNouvelle.length);
 
 

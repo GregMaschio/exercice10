@@ -219,7 +219,7 @@
   height: 3vh;
 }
 
-.texte-nouvelle2 button:active {
+.texte-nouvelle2 button:focus {
   background-color: #ff5656;
 }
 

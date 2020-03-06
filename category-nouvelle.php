@@ -23,6 +23,7 @@ while ( $query2->have_posts() ) {
             echo '<h3> <a href ="' . get_permalink($id) . '">' . get_the_title() ." - ". get_the_date() . '</a></h3>';
             echo '<p>' . substr(get_the_excerpt(),0,200) . '</p>'; 
             echo '<button class="BtnLireSuite"> Lire la suite </button>';
+            echo '<div class="division-vide"></div>';
             echo '</div>';
             echo '</div>';
 }
