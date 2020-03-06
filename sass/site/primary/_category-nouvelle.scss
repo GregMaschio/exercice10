@@ -10,3 +10,14 @@
 	width:70vw;
 	margin-left: 2em;
 }
+
+.texte-nouvelle2 button {
+    width:8vw;
+    background-color:rgb(140, 255, 140);
+    border:none;
+    height:3vh;
+}
+
+.texte-nouvelle2 button:active {
+    background-color:rgb(255, 86, 86);
+}

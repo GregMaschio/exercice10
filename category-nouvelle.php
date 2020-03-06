@@ -1,3 +1,6 @@
+
+<link rel="stylesheet" id="underscores-style-css" href="http://localhost/2020-veille/wp-content/themes/exercice9/style.css?ver=5.3.2" type="text/css" media="all">
+
 <?php
 /////////////////////////////////NOUVELLES
 echo '<h1>' . category_description(get_category_by_slug('nouvelle')) . '</h1>';        
@@ -10,6 +13,7 @@ $args2 = array(
 );
 $query2 = new WP_Query( $args2 );
 
+// echo '<div class ="conteneur-nouvelles">';
 // The 2nd Loop
 while ( $query2->have_posts() ) {
             $query2->the_post();
@@ -18,9 +22,11 @@ while ( $query2->have_posts() ) {
             echo '<div class ="texte-nouvelle2">';
             echo '<h3> <a href ="' . get_permalink($id) . '">' . get_the_title() ." - ". get_the_date() . '</a></h3>';
             echo '<p>' . substr(get_the_excerpt(),0,200) . '</p>'; 
+            echo '<button> Lire la suite </button>';
             echo '</div>';
             echo '</div>';
 }
+// echo '</div>';
 // Restore original Post Data
 wp_reset_postdata();
 ?>
