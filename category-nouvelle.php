@@ -10,17 +10,17 @@ $args2 = array(
 );
 $query2 = new WP_Query( $args2 );
 
-echo '<div class ="conteneur-nouvelles">';
 // The 2nd Loop
 while ( $query2->have_posts() ) {
-    echo '<div class ="posts-nouvelles">';
             $query2->the_post();
-            echo '<h3> <a href ="'. get_permalink($id) . '">' . substr(get_the_title( $query2->post->ID ),0,15) . '</a></h3>';
+            echo '<div class ="posts-nouvelle2">';
             the_post_thumbnail('thumbnail');
+            echo '<div class ="texte-nouvelle2">';
+            echo '<h3> <a href ="' . get_permalink($id) . '">' . get_the_title() ." - ". get_the_date() . '</a></h3>';
             echo '<p>' . substr(get_the_excerpt(),0,200) . '</p>'; 
             echo '</div>';
+            echo '</div>';
 }
-echo '</div>';
 // Restore original Post Data
 wp_reset_postdata();
 ?>
