@@ -1,6 +1,9 @@
-// let collectionBtnNouvelle = 
-// let collectionNouvelle = 
-console.log(collectionBtnNouvelle.length)
+window.addEventListener("load",function(){
+    let collectionBtnNouvelle = document.querySelectorAll(".BtnLireSuite");
+    let collectionNouvelle = document.querySelectorAll(".texte-nouvelle2 p");
+    console.log(collectionBtnNouvelle.length);
+
+
 if (collectionBtnNouvelle)
 {
     for (let btn of collectionBtnNouvelle){
@@ -8,7 +11,7 @@ if (collectionBtnNouvelle)
             btn.addEventListener('click',Ajax)
     }
 }
-
+});
 
 function Ajax(evt) {
     
